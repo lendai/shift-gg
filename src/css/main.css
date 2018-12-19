@@ -1,0 +1,140 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  background: #ffdbdb;
+  color: #01973d;
+  margin: 0;
+  padding: 0;
+}
+
+a { 
+  color: inherit; 
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover { text-decoration: underline; }
+
+.container {
+  width: 100%;
+  padding: 0 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+  .container--tight {
+    max-width: 660px;
+  }
+
+
+.base {
+  font-size: 2rem;
+}
+
+.main-header {
+  padding: 60px 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.8rem;
+  font-family: 'Vidaloka', serif;
+
+}
+
+.main-navigation a {
+  margin: 0 10px;
+  font-size: 2.8rem;
+}
+
+
+
+.usp {
+  counter-reset: usps;
+  list-style: none;
+  
+  margin: 0;
+  padding: 0;
+}
+.usp-item {
+  border: 2px #01973d solid;
+  counter-increment: usps;
+  position: relative;
+  border-left-width: 80px;
+  padding: 20px 20px 20px 40px;
+  margin-bottom: 2px;
+}
+.usp-item:before {
+  content: counter(usps) ".";
+  background: #01973d;
+  color: #ffdbdb;
+  font-size: 5rem;
+
+  position: absolute;
+  left: -80px;
+  width: 80px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+  .usp-item h3  {
+    margin: 0;
+    padding: 0 0 10px;
+    font-family: 'Vidaloka', serif;
+  }
+  .usp-item p {
+    padding: 0;
+    margin: 0;
+  }
+
+
+.preamble {
+  font-size: 4.8rem;
+  text-align: center;
+  padding: 0 200px;
+}
+
+.contact-footer {
+  margin-top: 120px;
+  background: #19202b;
+  padding: 50px 0;
+  text-align: center;
+  color: #ffdbdb;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 1em;
+
+  text-align: center;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.contact {
+}
+  .contact p {
+    padding: 0;
+    margin: 0;
+  }
+  .contact__name {
+    font-weight: bold;
+  }
+  .contact__email,
+  .contact__phone {
+    display: block;
+    text-decoration: none;
+  }
